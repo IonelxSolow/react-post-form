@@ -1,10 +1,24 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // logica
+  const [formData, setFormData] = useState({
+    author: "",
+    title: "",
+    body: "",
+    public: false,
+  });
 
-  return <h1>ciao</h1>;
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  return (
+    <div className="container mt-5">
+      <h1 className="mb-4">Crea un nuovo post</h1>
+      {/* Form*/}
+    </div>
+  );
 }
 
 export default App;
